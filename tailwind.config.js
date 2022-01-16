@@ -5,6 +5,26 @@ module.exports = {
       translate: {
         reverseFull: '-100%',
       },
+      keyframes: {
+        typing: {
+          from: {
+            width: '0%',
+          },
+          to: {
+            width: '100%',
+          },
+        },
+        'blink-caret': {
+          'from, to': { 'border-color': 'transparent' },
+          '50%': {
+            'border-color': 'black',
+          },
+        },
+      },
+      animation: {
+        typing:
+          ' typing 3.5s steps(30, end), blink-caret .5s step-end infinite',
+      },
     },
     screens: {
       '2xl': { max: '1535px' },

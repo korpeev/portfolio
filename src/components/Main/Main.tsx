@@ -8,7 +8,11 @@ const Main = () => {
           <img src={avatarLogo} alt='Avatar Logo' />
           <div className='pt-2 text-center text-4xl'>
             <h1 className=''>Hi, I am Aslan</h1>
-            <span className='block mt-5 font-semibold'>Frontend Developer</span>
+            <div className='w-full'>
+              <span className='block mt-5 font-semibold overflow-hidden border-r-4 border-black  whitespace-nowrap mx-auto tracking-widest animate-typing '>
+                Frontend Developer
+              </span>
+            </div>
           </div>
         </div>
       </div>
