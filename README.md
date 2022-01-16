@@ -1,2 +1,2 @@
-![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=portfolio-kjz9t5xi4-korpeev.vercel.app)
+![Vercel](https://img.shields.io/github/deployments/korpeev/portfolio/production?label=VERCEL)
 # Portfolio
