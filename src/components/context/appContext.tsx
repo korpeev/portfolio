@@ -10,7 +10,7 @@ const AppContext = createContext<AppContextType>({
 export const AppProvider: FC = ({ children }) => {
   const [projects, setProjects] = useState<ProjectList[]>([]);
   useEffect(() => {
-    axios.get(import.meta.env.VITE_API_URL as string).then((res) => setProjects(res.data));
+    axios.get(import.meta.env.VITE_API_URL as string).then((res) => setProjects(res.data.projects));
   }, []);
   return <AppContext.Provider value={{ projects, setProjects }}>{children}</AppContext.Provider>;
 };
