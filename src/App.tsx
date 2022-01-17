@@ -1,12 +1,18 @@
 import React from 'react';
-import { Header, Main } from '@/components';
+import { Header, Main, AboutMe, Projects } from '@/components';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Main />
-    </div>
+      <main>
+        <Main />
+        <AboutMe />
+        <Projects />
+      </main>
+    </>
   );
 };
 

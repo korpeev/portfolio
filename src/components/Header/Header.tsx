@@ -1,28 +1,26 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { IoMdClose } from 'react-icons/io';
-import cl from './classes';
-type MenuList = {
-  text: string;
-  href: string;
-};
+import React, { useState } from "react";
+import { useEffect } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
+import { MenuList } from "../types";
+import cl from "./classes";
+
 const menuListItems: MenuList[] = [
   {
-    text: 'Main',
-    href: '#main',
+    text: "Main",
+    href: "#main",
   },
   {
-    text: 'About me',
-    href: '#aboutme',
+    text: "About me",
+    href: "#aboutme",
   },
   {
-    text: 'Projects',
-    href: '#projects',
+    text: "Projects",
+    href: "#projects",
   },
   {
-    text: 'Contacts',
-    href: '#Contacts',
+    text: "Contacts",
+    href: "#Contacts",
   },
 ];
 const Header = () => {
@@ -36,8 +34,8 @@ const Header = () => {
     }
   };
   useEffect(() => {
-    window.addEventListener('resize', resizeHandler);
-    return () => window.removeEventListener('resize', resizeHandler);
+    window.addEventListener("resize", resizeHandler);
+    return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
   return (
@@ -50,11 +48,7 @@ const Header = () => {
         <div className={cl.menuBlockClasses(openMenu)}>
           <ul className={cl.menuListClasses}>
             {menuListItems.map(({ text, href }) => (
-              <li
-                key={href}
-                onClick={toggleOpenMenu}
-                className={cl.menuListItemClasses}
-              >
+              <li key={href} onClick={toggleOpenMenu} className={cl.menuListItemClasses}>
                 <a href={href}>{text}</a>
               </li>
             ))}
