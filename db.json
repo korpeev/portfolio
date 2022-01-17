@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "name": "MERN Todo App",
+      "description": "MERN stack Todo App With JWT Token Authentificate",
+      "path": "mern_todo_app",
+      "stackList": ["React", "Typescript", "MongoDB", "Express", "NodeJS"],
+      "links": [
+        { "linkName": "Github", "url": "https://github.com/korpeev/mern-todo-app" },
+        { "linkName": "Demo", "url": "https://my-mern-todolist.herokuapp.com/" }
+      ]
+    },
+    {
+      "name": "React Rolls Shop",
+      "description": "React Rolls Shop With Firebase/Firestore",
+      "path": "react_rolls_app",
+      "stackList": ["React", "Typescript", "Mobx", "React-Router-Dom", "Firebase"],
+      "links": [
+        { "linkName": "Github", "url": "https://github.com/korpeev/react-rolls" },
+        { "linkName": "Demo", "url": "https://react-rolls.netlify.app/" }
+      ]
+    },
+    {
+      "name": "Aviasales Test",
+      "description": "Aviasales ticket test application, sort and filter options",
+      "path": "react_aviasales_app",
+      "stackList": ["React", "Typescript", "Redux/Toolkit"],
+      "links": [
+        { "linkName": "Github", "url": "https://github.com/korpeev/avaisales-test" },
+        { "linkName": "Demo", "url": "https://priceless-mcclintock-6294f2.netlify.app/" }
+      ]
+    },
+    {
+      "name": "Hexlet Frontend lvl 3",
+      "description": "Hexlet frontend lvl 3 Website, parsing and aggregating rss feeds",
+      "path": "hexlet_frontend_lvl3",
+      "stackList": ["Javascript", "HTML", "CSS", "Bootstrap"],
+      "links": [
+        { "linkName": "Github", "url": "https://github.com/korpeev/frontend-project-lvl3" },
+        { "linkName": "Demo", "url": "https://frontend-project-lvl3-psi-five.vercel.app/" }
+      ]
+    }
+  ]
+}

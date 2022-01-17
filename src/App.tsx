@@ -1,18 +1,17 @@
-import React from 'react';
-import { Header, Main, AboutMe, Projects } from '@/components';
-import { useEffect } from 'react';
-import axios from 'axios';
+import React from "react";
+import { Header, Main, AboutMe, Projects } from "@/components";
+import { AppProvider } from "@/components/context/appContext";
 
 const App = () => {
   return (
-    <>
+    <AppProvider>
       <Header />
       <main>
         <Main />
         <AboutMe />
         <Projects />
       </main>
-    </>
+    </AppProvider>
   );
 };
 

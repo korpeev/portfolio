@@ -14,3 +14,8 @@ export type ProjectList = {
 export type ImgSelector = {
   [key: string]: string;
 };
+
+export type AppContextType = {
+  projects: ProjectList[];
+  setProjects: (projects: ProjectList[]) => void;
+};
