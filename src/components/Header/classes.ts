@@ -11,7 +11,7 @@ export default {
     "md:flex-col md:items-center md:my-24 text-white uppercase font-semibold flex items-center space-x-4 md:space-x-0 md:space-y-4",
   menuListItemClasses:
     "hover:-rotate-3 transition duration-300 ease-linear cursor-pointer hover:text-gray-400 ",
-  headerClasses: "py-3 bg-neutral-800 fixed w-full",
+  headerClasses: "py-3 bg-neutral-800 fixed w-full top-0",
   containerClasses: "container mx-auto max-w-7xl px-5 flex items-center justify-between",
   headerTitleClasses:
     "text-white text-2xl hover:cursor-pointer transition-colors hover:text-gray-400 duration-300 ease-linear font-bold uppercase",

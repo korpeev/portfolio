@@ -1,6 +1,6 @@
 tabWidth: 2
 bracketSpacing: true
-printWidth: 100
+printWidth: 90
 bracketLine: true
 jsxBracketSameLine: true
 arrowParens: "always"

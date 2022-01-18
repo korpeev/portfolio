@@ -1,4 +1,7 @@
-type ProjectLink = { [key: string]: string };
+type ProjectLink = {
+  url: string;
+  linkName: string;
+};
 export type MenuList = {
   text: string;
   href: string;
@@ -18,4 +21,6 @@ export type ImgSelector = {
 export type AppContextType = {
   projects: ProjectList[];
   setProjects: (projects: ProjectList[]) => void;
+  setCurrentProject: (project: ProjectList) => void;
+  currentProject: ProjectList;
 };
